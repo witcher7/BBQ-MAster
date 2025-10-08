@@ -1,0 +1,10 @@
+version: 0.2
+
+phases:
+  build:
+    commands: 
+       - echo "Zipping Website files..."
+       - zip -r website.zip index.html index.css index.js
+artifacts:
+  files:
+     - website.zip
